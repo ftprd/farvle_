@@ -125,9 +125,7 @@ section.main_top {
   align-items: center;
   width: 100%;
   height: 100dvh;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: darken;
-  background-image: url(img/main_top_bg.png);
+  background-image: url(img/top_bg.png);
   background-size: 100%;
   background-attachment: fixed;
   background-position: bottom;
@@ -614,15 +612,17 @@ footer p.copyright {
     display: none;
   }
   section.main_top {
-    display: grid;
-    place-items: center;
+    inset: 0;
+    margin: auto;
   }
   section.main_top p.top_catchcopy {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
     font-size: 2.5rem;
-    text-align: center;
     margin: 0;
-    padding: 0;
-    translate: 0 0;
+    translate: 0;
     writing-mode: vertical-rl;
   }
   section.main_top p.top_description {
